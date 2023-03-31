@@ -10,7 +10,7 @@
 # BMI = Weight in kilograms / height in meters squared.
 
 
-# In[17]:
+# In[34]:
 
 
 Weight = input("Enter your weight in Kilograms: ")
@@ -28,9 +28,12 @@ BMI = Weight / Height_Square
 
 print(BMI)
 
-
-# In[ ]:
-
-
-
+if BMI <  18.5:
+    print("You are Underweigth")
+elif BMI >= 18.5 and BMI <= 24.9:
+    print("You are Normal Weight")
+elif BMI >= 25 and BMI <=29.9:
+    print("You are Over weight")
+else:
+    print("You are Obese")
 
